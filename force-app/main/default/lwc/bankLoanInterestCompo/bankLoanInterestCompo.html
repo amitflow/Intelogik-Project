@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="Bank Loan Interest Calculator"  icon-name="custom:custom14">
+
+
+        <lightning-input type="number" label="Enter Principal Amount" onchange={principalchangehandler}></lightning-input>
+        <lightning-input type="number" label="Enter Years" onchange={durationchangehandler}></lightning-input>
+        <lightning-input type="number" label="Enter ROI" onchange={ratechangehandler}></lightning-input>
+
+        <lightning-button  label="Calculate Interest"  icon-position="centre" onclick={calculateloanamontHandler} ></lightning-button>
+<br><br>
+<lightning-formatted-text value={loanResut}></lightning-formatted-text>
+
+
+
+    </lightning-card>
+
+</template>

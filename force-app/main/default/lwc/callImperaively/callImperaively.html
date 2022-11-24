@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Imperatove call">
+        <lightning-button label="Call Imperative" variant="brand" onclick={handleCallImperative}></lightning-button>
+<template if:true={accountList}>
+   
+    <lightning-datatable data={accountList} columns={columns} key-field="Id"></lightning-datatable>
+   
+</template>
+        
+    </lightning-card>
+</template>

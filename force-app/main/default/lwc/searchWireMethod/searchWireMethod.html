@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Search Here By Wire">
+        <lightning-input type="search" value={Searchvalue} label="Search wire" onchange={handleinputwire}></lightning-input>
+        
+       
+        
+                    <lightning-datatable
+                             key-field="id"
+                            data = {accList}
+                            columns= {columns}>
+                    </lightning-datatable>
+
+      
+
+
+</lightning-card>
+   
+</template>

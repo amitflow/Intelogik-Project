@@ -1,0 +1,29 @@
+<template>
+   <lightning-card>
+    <lightning-combobox name="Accounts"
+    label="Select Account"
+    options={optionscombo}
+    value={value}
+    onchange={handleonchange}
+    >
+</lightning-combobox>
+<template if:true={cardVisible}>
+    <lightning-card title=" Datatable card">
+         <!-- Contact datatable starts here -->
+         <div style="height: 200px;">
+            <lightning-datatable  key-field ="id"
+                                   data={data}
+                                   columns={columns}>
+                                </lightning-datatable>
+                                   
+         
+
+         </div>
+         <!-- datatable ends here -->
+
+    </lightning-card>
+
+</template>
+<p>The selected value is : {value}</p>
+   </lightning-card> 
+</template>

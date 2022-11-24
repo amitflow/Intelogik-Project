@@ -1,0 +1,9 @@
+<template>
+    <h2>Account Datatable Lwc</h2>
+    <template if:true={AccountData}>
+        <lightning-datatable data={AccountData} columns={columns} key-field="Id"></lightning-datatable>
+    </template>
+    <template if:true={Error}>
+        {Error}
+    </template>
+</template>

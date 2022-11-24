@@ -1,0 +1,26 @@
+<template>
+    <lightning-card  title="Fech Data From Apex Imperative mode Three"  icon-name="custom:custom35">
+
+       <div>
+
+        <p>
+            <lightning-button  variant="brand" label="Load Accounts"  onclick={Handleload} ></lightning-button>
+        </p>
+        <template if:true={accounts}>
+
+            <template for:each={accounts} for:item="acc">
+
+                <p key={acc.id}> {acc.Name}</p>
+                  
+             </template>
+
+        </template>
+
+        <template if:true={error}>
+
+            {error}
+        </template>
+    </div>
+    </lightning-card>
+    
+</template>

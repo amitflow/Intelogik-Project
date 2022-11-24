@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Search Here">
+        <lightning-input type="search" value={Searchvalue} label="Search" onchange={handleinput}></lightning-input>
+        <lightning-button label="Search"  onclick={handleClickButton}></lightning-button>
+       
+        <template if:true={accList}>
+                    <lightning-datatable
+                             key-field="id"
+                            data = {accList}
+                            columns= {columns}>
+                    </lightning-datatable>
+
+       </template>
+
+
+</lightning-card>
+   
+
+</template>
